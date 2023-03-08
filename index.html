@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BasePoint Assesment</title>
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/google-fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+
+<!-- header start -->
+<header id="header">
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#special">About Us</a></li>
+        <li><a href="#about">FInd Us</a></li>
+        <li><a href="#dish">All Canpaigns</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+</nav>
+
+<div class="fas fa-hamburger"></div>
+<a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+
+</header>
+<!-- header  end -->
+
+<!-- home  start  -->
+<section id="home" class="container-fluid">
+<div class="row min-vh-100 align-items-center">    
+<div class="col-md-8 ml-md-5 text-md-left text-center content">
+    <h3>...</h3>
+    <h1>KFC</h1>
+    <h2>BARGAIN <br>BUCKET MENU<br>CAMPAIGN</h2>
+    <p>ghguishxioasjdo osadjuopasdjopdkjolsajd<br>
+        kifihdios bnfkldjf d dsacsm,jh9oi <br>
+        fkildo dsnkdsifoc afsaklifh sdflskicfhadsio9f sdiloaho9i.</p>
+    <a href="#special"><button>get started</button></a>
+</div>
+
+<div class="video-container">
+    <video src="images/vid1.mp4" autoplay loop class="vid vid1"></video>
+</div>
+</div>
+</section>
+<!-- home section end  -->
+
+<!-- card section start  -->
+<section id="special" class="container-fluid">
+
+<div class="heading text-center">
+<h1>our <span>special</span></h1>
+<p>fdwkaj  qoidjopl qdboqiwe dqdioqed doiqed9qiwo dkjdbqeo8ii doufdho q8fdqiodh o </p>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <img src="images/card1.jpg" alt="">
+        <p>jhgiujh oihsdaoi kiwhiwe fwkjhf9w foiwefhdi8w qouweokfhi8wqf wowfgh8w foiwgfd8owie fogfhowi8e fwufgowf 8 woi8fdgwif ghoif</p>
+        <a href="#"><button>read more</button></a>
+    </div>
+
+    <div class="card">
+        <img src="images/card2.jpg" alt="">
+        <p>jhgiujh oihsdaoi kiwhiwe fwkjhf9w foiwefhdi8w qouweokfhi8wqf wowfgh8w foiwgfd8owie fogfhowi8e fwufgowf 8 woi8fdgwif ghoif</p>
+        <a href="#"><button>read more</button></a>
+    </div>
+
+    <div class="card">
+        <img src="images/card3.jpg" alt="">
+        <p>jhgiujh oihsdaoi kiwhiwe fwkjhf9w foiwefhdi8w qouweokfhi8wqf wowfgh8w foiwgfd8owie fogfhowi8e fwufgowf 8 woi8fdgwif ghoif</p>
+        <a href="#"><button>read more</button></a>
+    </div>
+</div>
+</section>
+<!--card section end  -->
+
+
+<!--footer start  -->
+<section id="footer" class="container-fluid">
+<div class="row align-items-center">
+<div class="col-md-4 brand">
+<a href="#" class="logo"><img src="images/logo1.png" alt=""></a>
+
+<div class="icons">
+    <a href="#" class="fab fa-facebook-square"></a>
+    <a href="#" class="fab fa-twitter-square"></a>
+    <a href="#" class="fab fa-instagram-square"></a>
+    <a href="#" class="fab fa-pinterest-square"></a>
+</div>
+</div>
+<div class="col-md-4 footer-links">
+<h3>links:</h3>
+<a href="#home">home</a>
+<a href="#special">special</a>
+<a href="#about">about</a>
+<a href="#dish">dish</a>
+<a href="#contact">contact</a>
+</div>
+</div>
+
+<h1>&copy; Haritha <span>Pradeep</span></h1>
+
+</section>
+<!-- footer section ends  -->
+
+
+
+<!-- script part starts  -->
+
+<script>
+
+$(document).ready(function(){
+
+    $('.fa-hamburger').click(function(){
+        $(this).toggleClass('fa-times');
+        $('nav').toggleClass('nav-toggle');
+    });
+
+    $('nav ul li a').click(function(){
+        $('.fa-hamburger').removeClass('fa-times');
+        $('nav').removeClass('nav-toggle');
+    });
+
+
+    $(window).on('scroll load',function(){
+        if($(window).scrollTop() > 10){
+            $('#header').addClass('header-active');
+        }else{
+            $('#header').removeClass('header-active');
+        }
+    });
+
+});
+
+</script>
+
+</body> 
+</html>
